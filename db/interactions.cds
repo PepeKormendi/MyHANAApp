@@ -26,6 +26,15 @@ context app.interactions {
         price       : Price;
         currency    : Currency;
     };
+
+        entity Cars : cuid {
+        brand        : localized Text;
+        yeargang        : DateTime;
+
+        @Semantics.amount.currencyCode: 'currency'
+        price       : Price;
+        currency    : Currency;
+    };
 }
 
 @cds.persistence.exists

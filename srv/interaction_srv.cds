@@ -20,6 +20,7 @@ entity Languages           as projection on sap.common.Languages;
 @restrict: [{ grant: 'READ', where: 'country_code = ''DE'''}]
 entity HeaderView as projection on interactions.Headers;
 
+function sleep() returns Boolean;
 @readonly
 entity V_interaction as projection on V_INTERACTION;
 
